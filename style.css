@@ -39,5 +39,8 @@ footer a{color:var(--or2)}footer p{margin:.4em 0}.small{font-size:.8rem}.soc{dis
 .steps li:nth-child(2){background:var(--am)}.steps li:nth-child(3){background:var(--tl)}
 .rev:nth-of-type(3n+2){border-left-color:var(--am)}.rev:nth-of-type(3n){border-left-color:var(--tl)}
 .ok{border-color:var(--tl)}
-@media(min-width:760px){form{grid-template-columns:repeat(4,1fr)}form>label:first-child,form>label:nth-last-child(-n+3),form>.btn{grid-column:1/-1}form>.btn{justify-self:start}}
+@media(min-width:760px){form{grid-template-columns:repeat(4,1fr)}form>label.w,form>.btn{grid-column:1/-1}form>label.h{grid-column:span 2}form>.btn{justify-self:start}}
 textarea{resize:none}
+.meta{margin:.3em 0;color:var(--mute)}.meta b{color:var(--tx)}.rp{display:block;max-width:100%;max-height:280px;border-radius:10px;border:2px solid var(--line);margin:8px 0}
+.ph{display:flex;align-items:center;justify-content:center;gap:10px;height:110px;max-width:320px;border:2px dashed var(--line);border-radius:10px;color:var(--mute);margin:8px 0}.ph svg{width:42px;color:var(--empty)}
+input[type=file]{padding:8px}
