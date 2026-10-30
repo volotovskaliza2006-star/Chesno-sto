@@ -8,22 +8,34 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<meta property="og:title" content="ЧесноСТО — рейтинг СТО">
+<meta property="og:description" content="Чесні відгуки з фото про станції техобслуговування вашого міста.">
+<meta name="theme-color" content="#ff7a00">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23ff7a00'/%3E%3Ccircle cx='12' cy='12' r='6' fill='none' stroke='%23000' stroke-width='4'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="top">
   <a class="logo" href="#/"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="7.2" fill="none" stroke="currentColor" stroke-width="4.6"/><circle cx="12" cy="12" r="10.4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-dasharray="3 2.45"/><circle cx="12" cy="12" r="1.8" fill="currentColor"/></svg>Чесно<b>СТО</b></a>
+  <button class="burger" aria-label="Меню" aria-expanded="false">☰</button>
   <nav id="nav">
-    <a href="#/">Головна</a><a href="#/rating">Рейтинг СТО</a><a href="#/review">Залишити відгук</a><a href="#/about">Про проєкт</a><a href="#/contacts">Контакти</a>
+    <a href="#/">Головна</a><a href="#/rating">Рейтинг СТО</a><a href="#/review">Залишити відгук</a><a href="#/owners">Для власників СТО</a><a href="#/about">Про проєкт</a><a href="#/contacts">Контакти</a>
   </nav>
   <label class="city">Місто <select id="city" aria-label="Оберіть місто"></select></label>
 </header>
 <main id="app"></main>
 <footer>
-  <div class="soc"><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></div>
-  <p>© Єлизавета Волотовська 2026, <a href="mailto:y.volotovska_femp_18_24_b_d@knute.edu.ua">y.volotovska_femp_18_24_b_d@knute.edu.ua</a></p>
+  <div class="fcols">
+    <div><b>ЧесноСТО</b><p>Рейтинг станцій техобслуговування за відгуками водіїв.</p></div>
+    <div><b>Розділи</b><a href="#/rating">Рейтинг СТО</a><a href="#/review">Залишити відгук</a><a href="#/owners">Для власників СТО</a></div>
+    <div><b>Інформація</b><a href="#/about">Про проєкт</a><a href="#/rules">Правила та конфіденційність</a><a href="#/contacts">Контакти</a></div>
+    <div><b>Ми в соцмережах</b><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener">TikTok</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></div>
+  </div>
+  <p class="copy">© Єлизавета Волотовська 2026, <a href="mailto:y.volotovska_femp_18_24_b_d@knute.edu.ua">y.volotovska_femp_18_24_b_d@knute.edu.ua</a></p>
   <p class="small">Усі СТО та відгуки на сайті вигадані й наведені як демонстраційний приклад.</p>
 </footer>
+<div id="ck" class="ck" hidden>Сайт зберігає ваш вибір міста та відгуки лише у вашому браузері. <button class="btn">Зрозуміло</button></div>
+<noscript><p style="padding:20px;text-align:center">Для роботи сайту потрібен увімкнений JavaScript.</p></noscript>
 <script src="app.js"></script>
 </body>
 </html>
